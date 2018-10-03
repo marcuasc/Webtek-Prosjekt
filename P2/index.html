@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <title>P2 Design Guidelines</title>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>P2 Design Guidelines</h1>
+      <h2>Oscar, Marcus, Pål Andreas og Ole Jacob</h2>
+      <h6>Oktober 3, 2018</h6>
+    </header>
+    <main>
+      <section>
+        <h2>Klienten vår</h2>
+        <ul>
+          <li>Klient: Restaurant: Bigger Better Burger Joint</li>
+          <li>Kontaktperson: Bill B. Urger</li>
+        </ul>
+        <p>Vår klient er restauranten Bigger Better Burger Joint. Dette er en nyåpnet restaurant, som ønsker å gjøre seg markert i Trondheim sentrum. Restauranten har et stort fokus på ferske råvarer og god mat.</p>
+      </section>
+      <section>
+        <h2>Hensikt og mål</h2>
+        <p>Restauranten trenger en nettside for markedføre seg selv. Hensikten med siden er både det å formidle informasjon om restauranten og kunne bestille en egen-designet burger. Vi planlegger å løse dette gjennom å implentere en infoside med informasjon
+          og slideshow av maten og restauranten, i tilegg til å ha en egen bestillingside for å lage en egen burger. Siden restauranten vil ha en bestillingside vil de senere implementere database/backend for å ta imot evtuelle bestillinger. Vi har sammen med
+          restauranten et mål om å lage en attraktiv side som vil appellere til kunden på en meget positiv måte.
+        </p>
+      </section>
+      <section>
+        <h2>Brukere</h2>
+        <p>De typiske brukerne våres er personer i alle aldre. Åpenbart innenfor en viss geografisk nærhet. Brukerne må være kjent med internett, men nettsiden vår skal være intuitiv nok til at selv enkle brukere av internett skal kunne bruke siden vår.
+          Brukerne våres har et behov om å få en visuell fremstilling av produktet, en meny, og pris.</p>
+      </section>
+      <section>
+        <h2>Navigasjonsstruktur</h2>
+        <p>Nettsiden har en blanding av hierarkistisk og lineær struktur. Nettsiden har en klikk-struktur. Brukeren har dermed muligheten til å nå hvilken som helst del av nettsiden gjennom navigasjonsbaren på toppen av hver side. Navigasjonsbaren viser
+          knappene til de fire forskjellige nettsidene med en stor versjon av logoen i midten. Når brukeren blar lengre ned på nettsiden vil logoen minske til en mindre størrelse og midstille seg på navigasjonsbaren (knappene til de forskjellige nettsidene vil
+          bli større). Navigasjonsbaren vil feste seg på toppen av siden når brukeren blar videre.
+        </p>
+        <p>
+          Vi har valgt denne strukturen for at brukeren skal kunne navigere seg raskt og lettest mulig på nettsiden vår. Dette gir et bedre brukergrensesnitt og gjør det lett å navigere for alle brukere uavhengig av kompetanse.
+        </p>
+        <p></p>
+        <img src="bilder/navistructure.png" alt="Navigasjonsstrukturbilde">
+      </section>
+      <section>
+        <h2>Design</h2>
+        <p>Designet på nettsiden skal være rent og enkelt slik at nettsiden blir oversiktlig og lett å bruke. Hovedfokuset til nettsiden blir å presentere restauranten på en god og attraktiv måte. Navigasjonsbaren er designet slik at brukeren lett kan
+          navigere på siden, samtidig som at den gir et positivt estetisk inntrykk.
+        </p>
+        <p>
+          Bestillingssiden skal ha bilder av de forskjellige ingrediensene som brukeren kan velge mellom. Dette skaper en mer interaktiv og oversiktlig bestillingsfunksjon.
+        </p>
+        <p>
+          Bildegalleriet er designet på en slik måte at brukeren kan se på bilder eksempelretter for å friste og inspirere brukeren.
+        </p>
+        <ul>
+          <li>
+            Font:
+          </li>
+          <li>
+            Farge:
+          </li>
+          <li>
+            Bredde på siden:
+          </li>
+          <li>
+            Navigasjonsbaren:
+          </li>
+          <li>
+            Footer:
+          </li>
+          <li>
+            Logo: Logoen vil være plassert i navigasjonsbaren.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Innhold</h2>
+        <ol>
+          <li>
+            <h3>Forside</h3>
+            Denne siden skal presentere restauranten med bilder og informasjon. Forsiden skal vise brukeren hva restauranten har å tilby. Dette fremstilles ved bruk av parallax effekt når brukeren scroller.</li>
+          <li>
+            <h3>Bestillingsside</h3>
+            På denne siden kan brukeren lage sin egen burger og sende bestillingen til restauranten. Brukeren får beskjed når bestillingen er sendt.
+          </li>
+          <li>
+            <h3>Kontakt oss</h3>
+            Nettsiden skal også ha en side der brukeren skal kunne sende en melding til restauranten. Brukeren må oppgi epost addresse.
+          </li>
+          <li>
+            <h3>Bildegalleri</h3>
+            Bildegalleri plassert på bunnen av forsiden, med egen lenke i menyen.
+          </li>
+          <li>
+            <h3>Meny</h3>
+            Menyen skal innholde lenke til hver av punktene ovenfor.
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>Kravspesifikasjoner</h2>
+        <p>
+          Oscar og Pål Andreas vil ha ansvar for å implementere:
+        </p>
+        <ol>
+          <li>En JavaScript funksjon som gir tilbakemelding til brukeren på innsendte meldinger til restauranten. Dette gjør siden mer interaktiv.</li>
+          <li>En JavaScript funksjon for å få menyen til å endre form og innhold utifra hvor langt nedover brukeren har scrollet og på hvilken del av nettsiden brukeren befinner seg.</li>
+        </ol>
+        <p>
+          Marcus og Ole Jacob vil ha ansvar for å implementere:
+        </p>
+        <ol>
+          <li>En JavaScript funksjon for bildegalleriet. Brukeren skal ha muligheten til å bla gjennom bildene ved bruk av framover og bakover knapper.</li>
+          <li>En JavaScript funksjon for at brukeren skal kunne velge hva han/henne vil ha på burgeren sin. Nettsiden skal gi brukeren en tilbakemelding når ordren er sendt med en oppsummering av hva han/henne har bestilt.</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Plan</h2>
+        <p>
+          Alle filene under vil være inkludert i mappen
+          <i>BBB</i>.
+        </p>
+        <ul>
+          <li>
+            index.html
+          </li>
+          <li>
+            kontakt.html
+          </li>
+          <li>
+            bestilling.html
+          </li>
+          <li>
+            bilder.html
+          </li>
+          <li>
+            img
+          </li>
+          <ul>
+            <li>
+              bilde1.png
+            </li>
+            <li>
+              bilde2.png
+            </li>
+            <li>
+              ...
+            </li>
+            <li>
+              bilde(n).png
+            </li>
+            <li>
+              logo.png
+            </li>
+            <li>
+              bakgrunnsbilde.png
+            </li>
+          </ul>
+          <li>
+            script.js
+          </li>
+          <li>
+            style.css
+          </li>
+        </ul>
+        <h3>Arbeidsfordeling</h3>
+        <table>
+          <tr>
+            <th>
+              Filnavn
+            </th>
+            <th>
+              Beskrivelse
+            </th>
+            <th>
+              Ansvarlig
+            </th>
+            <th>
+              Tidsfrist
+            </th>
+          </tr>
+          <tr>
+            <td>
+              index.html
+            </td>
+            <td>
+              Forsiden
+            </td>
+            <td>
+              Pål Andreas
+            </td>
+            <td>
+              1. Nov.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              bestilling.html
+            </td>
+            <td>
+              Siden der brukeren kan velge hva han/henne vil ha på burgeren sin.
+            </td>
+            <td>
+              Ole Jacob
+            </td>
+            <td>
+              1. Nov.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              kontakt.html
+            </td>
+            <td>
+              Siden der brukeren kan sende inn meldinger til restauranten.
+            </td>
+            <td>
+              Oscar
+            </td>
+            <td>
+              1. Nov.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              bilder.html
+            </td>
+            <td>
+              Siden der brukeren kan se gjennom et galleri av bilder av restauranten.
+            </td>
+            <td>
+              Marcus
+            </td>
+            <td>
+              1. Nov.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              style.css
+            </td>
+            <td>
+              Stilarket for nettsidene
+            </td>
+            <td>
+              Alle
+            </td>
+            <td>
+              5. Nov.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              script.js
+            </td>
+            <td>
+              JavaScripten til nettsidene.
+            </td>
+            <td>
+              Alle
+            </td>
+            <td>
+              5. Nov.
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
