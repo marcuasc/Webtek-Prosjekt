@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 body {
   background-image: url("../bilder/wall.jpg");
   background-size: cover;
@@ -66,4 +69,12 @@ td {
 #bakgrunn {
   width: 600px;
   padding: 0;
+}
+
+#quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+#josefin {
+  font-family: 'Josefin Sans', sans-serif;
 }
