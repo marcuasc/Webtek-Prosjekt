@@ -62,3 +62,8 @@ table {
 td {
   font-weight: normal;
 }
+
+#bakgrunn {
+  width: 600px;
+  padding: 0;
+}
