@@ -46,11 +46,6 @@ li {
   margin-bottom: 10px;
 }
 
-h6 {
-  padding: 0;
-  margin: 0;
-}
-
 table,
 td,
 th {
@@ -64,11 +59,6 @@ table {
 
 td {
   font-weight: normal;
-}
-
-#bakgrunn {
-  width: 600px;
-  padding: 0;
 }
 
 #quicksand {
