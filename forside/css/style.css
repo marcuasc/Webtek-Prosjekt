@@ -19,18 +19,18 @@ html {
 }
 
 #navbar ul {
-  width: 70%;
+  width: 1000px;
   margin: 0 auto;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
 }
 
 #navbar ul li {
   transition: all 0.5s ease;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 10px;
   height: 190px;
 }
 
@@ -38,7 +38,7 @@ html {
   transition: all 0.5s ease;
   line-height: 190px;
   white-space: nowrap;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #navbar ul li img {
