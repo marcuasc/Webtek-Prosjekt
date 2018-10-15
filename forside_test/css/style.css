@@ -12,10 +12,9 @@ html {
 }
 
 #navbar {
-  top: 0;
   position: fixed;
   width: 100%;
-  background-color: #192028;
+  background-color: #111111;
   color: white;
 }
 
@@ -68,15 +67,16 @@ html {
 }
 
 #menu {
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   z-index: 15;
   position: fixed;
-  top: 0;
-  background-color: #192028;
+  background-color: #111111;
   width: 100vw;
 }
 
 #menuButton {
+  float: right;
+  margin-right: 15px;
   width: 120px;
   height: 120px;
   cursor: pointer;
@@ -162,6 +162,7 @@ html {
   }
 
   #navbar ul {
+    transition: all 0s;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -171,6 +172,7 @@ html {
   }
 
   #navbar ul li {
+    transition: all 0s;
     flex-grow: 1;
     text-align: center;
     line-height: calc(100vh/4);
@@ -179,10 +181,12 @@ html {
   }
 
   #navbar ul li a {
+    transition: all 0s;
     font-size: 60px;
   }
 
   #navbar ul li:nth-child(3) {
+    transition: all 0s;
     display: none;
   }
 
