@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    <title>Hei!</title>
+    <script type="text/javascript" src="bestilling.js" async></script>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" type="text/css" href="css/bestilling.css">
+    <h1>Bestillingsskjema</h1>
+
+</head>
+
+<body>
+    <h1 id='title'></h1>
+
+    <h2>Sett sammen din burger</h2>
+
+    <!--
+       <div class='buttons'>
+        <button onclick="changeDisplay ()">Display: none </button>
+        <button onclick="changeVisibility ()">Visibility: hidden</button>
+        <button onclick="reset ()">Reset</button>
+    </div>
+    -->
+
+    <div class='bread'>
+        <button onclick='**()' id='finebun'> </button>
+        <button onclick='**()' id='graybun'> </button>
+
+        <label for="finebun">Fint brød</label>
+        <input type=radio name="bread" id="finebun">
+
+    </div>
+
+    <div class="container">
+        <h1>Burgerbestilling</h1>
+        <!-- Her velges brød -->
+        <div id="buntable">
+            <h3 class="tablehead">Velg brød*:</h3>
+            <div class="menu">
+                <label class="fin">
+                    <input type="radio" name="size" value="Fint"> Fint<br>
+                    <img src="bilder/finebun.jpg">
+                </label>
+                <label class="gro">
+                    <input type="radio" name="size" value="Grovt"> Grovt<br>
+                    <img src="bilder/graybun.jpg">
+                </label>
+
+            </div>
+        </div>
+        <br>
+        <!-- Her velges kjøtt -->
+        <div id="meattable">
+            <h3 class="tablehead">Velg kjøtt*:</h3>
+            <div class="menu">
+                <input type="radio" name="meat" value="beef" id="beef"> Biff<br> <input type="radio" name="cheese" value="tartar"> Tartar<br>
+                <input type="radio" name="meat" value="red"> Rødbete<br>
+            </div>
+        </div>
+        <br>
+        <!-- Her velges saus -->
+        <div id="saucetable">
+            <h3 class="tablehead">Velg saus*:</h3>
+            <div class="menu">
+                <input type="radio" name="sauce" value="ketchup"> Ketchup<br>
+                <input type="radio" name="sauce" value="mayo"> Majones<br>
+                <input type="radio" name="sauce" value="bbq"> Barbecue saus<br>
+            </div>
+        </div>
+        <br>
+        <!-- Her velges grønnsaker -->
+        <div id="vegtable">
+            <h3 class="tablehead">Velg grønnsaker:</h3>
+            <div class="menu">
+                <input type="checkbox" name="veg" value="tomat"> Tomat<br>
+                <input type="checkbox" name="veg" value="løk"> Løk<br>
+                <input type="checkbox" name="veg" value="sylte"> Sylteagurk<br>
+                <input type="checkbox" name="veg" value="salat"> Salat<br>
+            </div>
+        </div>
+
+
+        <!-- denne funker
+           <div class='meat'>
+            <button onclick='**()' id='beef'> </button>
+            <button onclick='**()' id='tartar'> </button>
+            <button onclick='**()' id='red'> </button>
+        </div>
+        -->
+
+
+        <!--
+        <div id="radio-button-wrapper">
+            <select multiple name="item" class="details" action="post" id="mySelect" onchange="showimage(this.value)">
+                <option value="1">finebun</option>
+                <option value="2">graybun</option>
+                <option value="3">beef</option>
+                <option value="4">red</option>
+            </select>
+        </div>
+        
+        -->
+
+
+        <h2>Part 6</h2>
+        <ul id='tech'>
+        </ul>
+</body>
+
+        </html>

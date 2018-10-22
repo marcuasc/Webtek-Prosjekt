@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    margin: auto;
+    width: 600px;
+    min-height: 600px;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+main h2 {
+    text-align: center;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: Helvetica;
+}
+
+section {
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 30px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    line-height: 150%;
+}
+
+section img {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 540px;
+}
+
+td {
+    font-weight: normal;
+}
+
+#quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Her er css til bestillingssiden med knapper og bokser */
+
+.bread {
+    /* Sets the size and position of each box */
+    width: 400px;
+    height: 200px;
+    background-color: #185D8B;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.meat {
+    width: 600px;
+    height: 200px;
+    background-color: #185D8B;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    width: 600px;
+    height: 200px;
+    background-color: none;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Her velger man om checkboksene skal være synlig eller ei
+
+input {
+    display: none;
+
+
+}
+*/
+
+label > input {
+    /* HIDE RADIO */
+    visibility: hidden;
+    /* Makes input not-clickable */
+    position: absolute;
+    /* Remove input from document flow */
+}
+
+label > input + img {
+    /* IMAGE STYLES */
+    cursor: crosshair;
+    border: 2px solid transparent;
+}
+
+label > input:checked + img {
+    /* (RADIO CHECKED) IMAGE STYLES */
+    border: 2px solid #f00;
+}
+
+
+
+#finebun {
+    background-image: url("../bilder/finebun.jpg");
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#graybun {
+    background-image: url("../bilder/graybun.jpg");
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#beef {
+    background-image: url("../bilder/beef.jpeg");
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#tartar {
+    background-image: url("../bilder/tartar.jpeg");
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#red {
+    background-image: url("../bilder/red.jpeg");
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+.buttons {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+body {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+
+
+.menu {
+    margin-left: 20px;
+}
