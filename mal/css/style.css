@@ -1,19 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
-body,
-html {
-  height: 100%;
+* {
   margin: 0;
-  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  top: 0;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
 
 path {
-  fill: #FFFFFF;
+  fill: white;
+}
+
+#main {
+  padding: 80px;
+  max-width: 864px;
+  top: 200px;
+  position: absolute;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  font-size: 25px;
 }
 
 #navbar {
+  top: 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   background-color: #111111;
   color: white;
 }
@@ -30,14 +50,14 @@ path {
 #navbar ul li {
   transition: all 0.5s ease;
   padding: 0 10px;
-  height: 190px;
+  height: 100px;
 }
 
 #navbar ul li a {
   transition: all 0.5s ease;
-  line-height: 190px;
+  line-height: 100px;
   white-space: nowrap;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   text-decoration: none;
 }
@@ -48,21 +68,6 @@ path {
 
 #navbar ul li img {
   transition: all 0.5s ease;
-  height: 150px;
-  width: 150px;
-  padding: 20px;
-}
-
-#navbar[class*="small"] ul li {
-  height: 100px;
-}
-
-#navbar[class*="small"] ul li a {
-  line-height: 100px;
-  font-size: 20px;
-}
-
-#navbar[class*="small"] ul li img {
   width: 60px;
   height: 60px;
   padding: 20px;
@@ -114,49 +119,15 @@ path {
 #menuButton[class*="toggled"] #buttonBot {
   transform: translateY(-25px) rotate(-135deg);
 }
-
-.bg {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-
-.bg1 {
-  background-image: url("../img/forside_bilde_1.jpg");
-  min-height: 100%;
-}
-
-.bg2 {
-  background-image: url("../img/forside_bilde_2.jpg");
-  min-height: 600px;
-}
-
-.bg3 {
-  background-image: url("../img/forside_bilde_3.jpg");
-  min-height: 600px;
-}
-
-.text {
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 50px 80px;
-}
-
-.text h3 {
-  letter-spacing: 5px;
-  text-align: center;
-}
 @media only screen and (max-width: 1024px) {
-  .bg {
-    background-attachment: scroll;
+  body {
+    background-image: none;
   }
 
-  .bg1 {
-    min-height: 600px;
+  #main {
+    top: 100px;
+    z-index: -1;
+    height: calc(100% - 100px - 160px);
   }
 
   #navbar {
@@ -197,10 +168,6 @@ path {
   #navbar ul li:nth-child(3) {
     transition: all 0s;
     display: none;
-  }
-
-  #navbar[class*="small"] ul li a {
-    font-size: 60px;
   }
 
   #menu[class*="toggled"] {
