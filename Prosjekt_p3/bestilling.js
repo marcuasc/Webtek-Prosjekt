@@ -1,3 +1,19 @@
+var checkedValue = null; 
+var inputElements = document.getElementsByClassName('container');
+for(var i=0; inputElements[i]; ++i){
+      if(inputElements[i].checked){
+           checkedValue = inputElements[i].value;
+           //break;
+           
+      }
+    console.log(inputElements);
+    console.log(checkedValue + "cV")
+}
+let checkList = [];
+function addChecked() {
+    
+}
+
 /* UFULLSTENDIG KODE, FUNKER IKKE
 function buildQuiz() {
     const output = [];

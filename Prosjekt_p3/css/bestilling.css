@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 body {
-    background-size: cover;
+    background-size: 600px;
     background-attachment: fixed;
 }
 
@@ -35,12 +35,6 @@ section {
     line-height: 150%;
 }
 
-section img {
-    max-width: 540px;
-    margin: 0 auto;
-    padding: 0;
-}
-
 li {
     margin-bottom: 10px;
 }
@@ -70,28 +64,19 @@ td {
 
 /* Her er css til bestillingssiden med knapper og bokser */
 
-.bread {
+.body .container{
     /* Sets the size and position of each box */
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     background-color: #185D8B;
     margin: 10px;
     display: flex;
     justify-content: space-around;
 }
 
-.meat {
-    width: 600px;
-    height: 200px;
-    background-color: #185D8B;
-    margin: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.menu {
-    width: 600px;
-    height: 200px;
+.body .menu {
+    width: 300px;
+    height: 100px;
     background-color: none;
     margin: 10px;
     display: flex;
@@ -99,12 +84,6 @@ td {
 }
 
 /* Her velger man om checkboksene skal være synlig eller ei
-
-input {
-    display: none;
-
-
-}
 */
 
 label > input {
@@ -124,7 +103,9 @@ label > input + img {
 label > input:checked + img {
     /* (RADIO CHECKED) IMAGE STYLES */
     border: 2px solid #f00;
+    
 }
+
 
 
 
@@ -138,9 +119,9 @@ label > input:checked + img {
 
 #graybun {
     background-image: url("../bilder/graybun.jpg");
-    background-size: 100%;
-    height: 100%;
-    width: 100%;
+    background-size: 200px;
+    height: 200px;
+    width: 200px;
     background-repeat: no-repeat;
 }
 
@@ -155,16 +136,16 @@ label > input:checked + img {
 #tartar {
     background-image: url("../bilder/tartar.jpeg");
     background-size: 100%;
-    height: 100%;
-    width: 100%;
+    height: 100px;
+    width: 100px;
     background-repeat: no-repeat;
 }
 
 #red {
     background-image: url("../bilder/red.jpeg");
     background-size: 100%;
-    height: 100%;
-    width: 100%;
+    height: 100px;
+    width: 100px;
     background-repeat: no-repeat;
 }
 
@@ -176,12 +157,6 @@ label > input:checked + img {
     text-align: center;
 }
 
-
-body {
-    font-size: 20px;
-    font-family: sans-serif;
-    color: #333;
-}
 
 
 

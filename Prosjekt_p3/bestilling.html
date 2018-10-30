@@ -23,28 +23,32 @@
     </div>
     -->
 
+    <!--
     <div class='bread'>
-        <button onclick='**()' id='finebun'> </button>
-        <button onclick='**()' id='graybun'> </button>
+        <button onclick='' id='finebun'> </button>
+        <button onclick='' id='graybun'> </button>
 
         <label for="finebun">Fint brød</label>
         <input type=radio name="bread" id="finebun">
 
     </div>
+    -->
 
     <div class="container">
         <h1>Burgerbestilling</h1>
+
+        <button onclick="resetButton()">Slett valg</button>
         <!-- Her velges brød -->
         <div id="buntable">
             <h3 class="tablehead">Velg brød*:</h3>
             <div class="menu">
-                <label class="fin">
-                    <input type="radio" name="size" value="Fint"> Fint<br>
-                    <img src="bilder/finebun.jpg">
+                <label class="fine">
+                    <input type="radio" name="bun" value="Fint" onclick="addChecked(this)">
+                    <img src="bilder/finebun.jpg" id="fine">  <!-- onclick="addOrderItem(this)" -->
                 </label>
-                <label class="gro">
-                    <input type="radio" name="size" value="Grovt"> Grovt<br>
-                    <img src="bilder/graybun.jpg">
+                <label class="gray">
+                    <input type="radio" name="bun" value="Fint"> 
+                    <img src="bilder/graybun.jpg" id="gray" >
                 </label>
 
             </div>
@@ -54,8 +58,18 @@
         <div id="meattable">
             <h3 class="tablehead">Velg kjøtt*:</h3>
             <div class="menu">
-                <input type="radio" name="meat" value="beef" id="beef"> Biff<br> <input type="radio" name="cheese" value="tartar"> Tartar<br>
-                <input type="radio" name="meat" value="red"> Rødbete<br>
+                <label class="beef">
+                    <input type="radio"  value="beef"> 
+                    <img src="bilder/beef.jpeg" id="beef">
+                </label>
+                <label class="tartar">
+                    <input type="radio"  value="tartar"> 
+                    <img src="bilder/tartar.jpeg"  id="tartar">
+                </label>
+                <label class="red">
+                    <input type="radio" value="red" > 
+                    <img src="bilder/red.jpeg" id="red">
+                </label>
             </div>
         </div>
         <br>
