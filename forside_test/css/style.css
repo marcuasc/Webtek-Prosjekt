@@ -11,6 +11,19 @@ path {
   fill: #FFFFFF;
 }
 
+footer {
+  background-color: #111111;
+}
+
+footer div {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0 auto;
+  padding: 40px 50px;
+}
+
 #navbar {
   position: fixed;
   width: 100%;
@@ -74,10 +87,11 @@ path {
 
 #menu {
   transition: all 0.2s ease;
-  z-index: 15;
+  z-index: 1;
   position: fixed;
   background-color: #111111;
   width: 100vw;
+  pointer-events: none;
 }
 
 #menuButton {
@@ -86,6 +100,7 @@ path {
   height: 100px;
   cursor: pointer;
   display: none;
+  pointer-events: all;
 }
 
 #buttonTop {
@@ -181,6 +196,7 @@ path {
   }
 
   #navbar ul li {
+    height: 100px;
     transition: all 0s;
     flex-grow: 1;
     text-align: center;
@@ -192,6 +208,7 @@ path {
   #navbar ul li a {
     transition: all 0s;
     font-size: 60px;
+    line-height: 100px;
   }
 
   #navbar ul li:nth-child(3) {
