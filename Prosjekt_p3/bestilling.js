@@ -1,8 +1,9 @@
 
-document.getElementById("submitButton").onclick = submitOrder;
+//document.getElementById("submitButton").onclick = submitOrder;
 
 function submitOrder() {
-    let outputText = "Du har valgt: ";
+    console.log("hei");
+    let outputText = "Du har bestilt en hamburger med: ";
     let checkedElements = [];
     inputElement = document.getElementsByClassName("input");
     console.log(inputElement);
@@ -27,9 +28,10 @@ function submitOrder() {
             outputText =  outputText + ", " + checkedElements[i].value;
         }
     }
-    console.log(outputText);
+    return outputText;
 
 }
+//console.log("test" + outputText);
 
 // Henter modal
 var modal = document.getElementById('myModal');
@@ -37,11 +39,14 @@ var modal = document.getElementById('myModal');
 var mSubmit = document.getElementById("submitButton");
 // Henter inn elementet vi skal putte info inn i 
 var element = document.getElementById("pModal");
+var fragment = document.createDocumentFragment();
 // Henter span-elementet som lukker modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal 
 mSubmit.onclick = function() {
+    submitOrder();
+    element.innerHTML = submitOrder();
     modal.style.display = "block";
 }
 
