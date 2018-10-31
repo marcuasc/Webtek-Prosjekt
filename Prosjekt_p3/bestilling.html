@@ -8,6 +8,7 @@
     <link rel="Stylesheet" type="text/css" href="css/bestilling.css">
     <h1>Bestillingsskjema</h1>
 
+
 </head>
 
 <body>
@@ -36,18 +37,16 @@
 
     <div class="container">
         <h1>Burgerbestilling</h1>
-
-        <button onclick="resetButton()">Slett valg</button>
         <!-- Her velges brød -->
         <div id="buntable">
             <h3 class="tablehead">Velg brød*:</h3>
             <div class="menu">
                 <label class="fine">
-                    <input type="radio" name="bun" value="Fint" onclick="addChecked(this)">
+                    <input class="input" value="fint brød" type="radio" name="bun" >
                     <img src="bilder/finebun.jpg" id="fine">  <!-- onclick="addOrderItem(this)" -->
                 </label>
                 <label class="gray">
-                    <input type="radio" name="bun" value="Fint"> 
+                    <input class="input" value="grovt brød" type="radio" name="bun"> 
                     <img src="bilder/graybun.jpg" id="gray" >
                 </label>
 
@@ -59,15 +58,15 @@
             <h3 class="tablehead">Velg kjøtt*:</h3>
             <div class="menu">
                 <label class="beef">
-                    <input type="radio"  value="beef"> 
+                    <input class="input" value="biff" type="radio" name="meat"> 
                     <img src="bilder/beef.jpeg" id="beef">
                 </label>
                 <label class="tartar">
-                    <input type="radio"  value="tartar"> 
+                    <input class="input" value="tartar" type="radio"  name="meat"> 
                     <img src="bilder/tartar.jpeg"  id="tartar">
                 </label>
                 <label class="red">
-                    <input type="radio" value="red" > 
+                    <input class="input" value="rødbetekjøtt" type="radio" name="meat" > 
                     <img src="bilder/red.jpeg" id="red">
                 </label>
             </div>
@@ -77,9 +76,18 @@
         <div id="saucetable">
             <h3 class="tablehead">Velg saus*:</h3>
             <div class="menu">
-                <input type="radio" name="sauce" value="ketchup"> Ketchup<br>
-                <input type="radio" name="sauce" value="mayo"> Majones<br>
-                <input type="radio" name="sauce" value="bbq"> Barbecue saus<br>
+                    <label class="ketchup">
+                            <input class="input" value="ketsjup" type="checkbox" name="sauce" > 
+                            <img src="bilder/ketchup.jpg" id="ketchup">
+                    </label>
+                    <label class="mayo">
+                            <input class="input" value="majones" type="checkbox" name="sauce" > 
+                            <img src="bilder/mayo.jpg" id="mayo">
+                    </label>
+                    <label class="bbq">
+                            <input class="input" value="barbecuesaus" type="checkbox" name="sauce" > 
+                            <img src="bilder/bbq.jpg" id="bbq">
+                    </label>    
             </div>
         </div>
         <br>
@@ -87,39 +95,36 @@
         <div id="vegtable">
             <h3 class="tablehead">Velg grønnsaker:</h3>
             <div class="menu">
-                <input type="checkbox" name="veg" value="tomat"> Tomat<br>
-                <input type="checkbox" name="veg" value="løk"> Løk<br>
-                <input type="checkbox" name="veg" value="sylte"> Sylteagurk<br>
-                <input type="checkbox" name="veg" value="salat"> Salat<br>
+                    <label class="salad">
+                            <input class="input" value="salat" type="checkbox" name="veg" > 
+                            <img src="bilder/salad.jpg" id="salad">
+                    </label>
+                    <label class="onion">
+                            <input class="input" value="løk" type="checkbox" name="veg" > 
+                            <img src="bilder/onion.jpg" id="onion">
+                    </label>
+                    <label class="pickle">
+                            <input class="input" value="sylteagurk" type="checkbox" name="veg" > 
+                            <img src="bilder/pickle.jpg" id="pickle">
+                    </label>    
             </div>
         </div>
 
-
-        <!-- denne funker
-           <div class='meat'>
-            <button onclick='**()' id='beef'> </button>
-            <button onclick='**()' id='tartar'> </button>
-            <button onclick='**()' id='red'> </button>
-        </div>
-        -->
-
-
-        <!--
-        <div id="radio-button-wrapper">
-            <select multiple name="item" class="details" action="post" id="mySelect" onchange="showimage(this.value)">
-                <option value="1">finebun</option>
-                <option value="2">graybun</option>
-                <option value="3">beef</option>
-                <option value="4">red</option>
-            </select>
-        </div>
+        <button type="submit" id="submitButton">Bestill</button>
         
-        -->
 
+        <!-- MODAL -->
+        <div id="myModal" class="modal">
 
-        <h2>Part 6</h2>
-        <ul id='tech'>
-        </ul>
+                <!-- content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id=pModal>
+                      
+                  </p>
+                </div>
+              
+              </div>
 </body>
 
-        </html>
+</html>
