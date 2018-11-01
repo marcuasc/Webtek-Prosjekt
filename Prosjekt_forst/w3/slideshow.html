@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Slideshow</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="slideshow.css">
+  <style media="screen">
+  </style>
+</head>
+<body>
+  <div class="slideshow">
+    <div class="pic"><img src="img/pic1.jpg" alt="N1"></div>
+    <div class="pic"><img src="img/pic2.jpg" alt="N2"></div>
+    <div class="pic"><img src="img/pic3.jpg" alt="N3"></div>
+    <div class="pic"><img src="img/pic4.jpg" alt="N4"></div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="dots_div">
+    <div class="dots" id="dot1" onclick="currentSlide(1)"></div>
+    <div class="dots" id="dot2" onclick="currentSlide(2)"></div>
+    <div class="dots" id="dot3" onclick="currentSlide(3)"></div>
+    <div class="dots" id="dot4" onclick="currentSlide(4)"></div>
+    </div>
+  </div>
+  <script src="slideshow.js">
+  </script>
+</body>
+</html>
