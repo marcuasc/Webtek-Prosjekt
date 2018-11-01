@@ -1,15 +1,13 @@
 var submit = document.getElementById("submit");
-var melding = document.getElementById("melding");
 var email = document.getElementById("e-mail");
 var navn = document.getElementById("navn");
-//submit.addEventListener('click', display);
 submit.addEventListener('click', formSubmit);
-//Funskjon som lager en streng med navn og e-post til kunden, og returnerer strengen.
+//Funskjon som lager en streng med navn og e-post kunden legger inn, og returnerer strengen.
 function display() {
   var melding = "Takk for din henvendelse, " + navn.value+ ". Du vil få svar fortløpende på: "+ email.value;
   return melding;
 }
-//Legger til en funksjon som forhindrer nettsiden i å reloade når knappen blir trykket på.
+//Legger til en funksjon som forhindrer nettsiden i å reloade når send-knappen blir trykket på.
 function formSubmit(event) {
   event.preventDefault();
 }
@@ -17,8 +15,6 @@ function formSubmit(event) {
 
 // Henter modal
 var modal = document.getElementById("myModal");
-// Henter knappen som åpner modal
-var mSubmit = document.getElementById("submitButton");
 // Henter inn elementet vi skal putte info inn i
 var element = document.getElementById("pModal");
 var fragment = document.createDocumentFragment();
