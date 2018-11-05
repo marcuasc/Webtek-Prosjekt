@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="Stylesheet" type="text/css" href="css/style.css">
-    <link rel="Stylesheet" type="text/css" href="css/kontaktstyle.css">
+    <link rel="Stylesheet" type="text/css" href="css/bildegalleristyle.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -51,27 +51,18 @@
     <div id="holder">
       <div id="body">
         <div id="main">
-          <h2>Kontakt oss</h2>
-          <form id="form">
-            <p>Navn:</p>
-            <input type="text" name="navn"><br><br>
-            <p>
-              E-post:
-            </p>
-            <input type="email" name="email"><br><br>
-            <p>
-              Melding:
-            </p>
-            <textarea name="tekst" rows="4" cols="50"></textarea>
-            <br>
-            <input type="button" id="submit" value="Send melding">
-          </form>
+          <div class="slideshow" id="slideshow">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
         </div>
       </div>
       <div id="myModal" class="modal">
         <div class="modal-content">
           <div id="close"></div>
-          <div id="divModal"></div>
+          <div id="divModal">
+            <span></span>
+          </div>
         </div>
       </div>
       <footer>
@@ -87,6 +78,6 @@
       </footer>
     </div>
     <script type="text/javascript" src="scripts/script.js"></script>
-    <script type="text/javascript" src="scripts/kontaktscript.js"></script>
+    <script type="text/javascript" src="scripts/bildegalleriscript.js"></script>
   </body>
 </html>

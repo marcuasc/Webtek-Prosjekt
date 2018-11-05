@@ -94,6 +94,13 @@ footer div {
   pointer-events: none;
 }
 
+#menu img {
+  display: none;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
 #menuButton {
   float: right;
   width: 100px;
@@ -224,6 +231,7 @@ footer div {
     background-color: transparent;
   }
 
+  #menu img,
   #menuButton {
     display: block;
   }
