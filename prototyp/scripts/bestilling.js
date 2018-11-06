@@ -69,7 +69,7 @@ function changePage() {
     side1Element.style.display = "none";
     side2Element.style.display = "block";
   }
-  else if (this.value == "Forrige") {
+  else if (this.value == "Tilbake") {
     side1Element.style.display = "block";
     side2Element.style.display = "none";
   }
