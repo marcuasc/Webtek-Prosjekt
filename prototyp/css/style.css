@@ -32,7 +32,7 @@ footer {
   right: 0;
 }
 
-footer div {
+footer > div {
   display: flex;
   justify-content: space-between;
   color: white;
