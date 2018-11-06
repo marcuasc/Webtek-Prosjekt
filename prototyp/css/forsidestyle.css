@@ -11,7 +11,7 @@ path {
   fill: #FFFFFF;
 }
 
-p{
+.text p {
   line-height: 2.0;
 }
 
@@ -43,22 +43,26 @@ footer > div p {
   width: 1000px;
   margin: 0 auto;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
+  text-align: justify;
   list-style: none;
+  margin-bottom: -20px;
+}
+
+#navbar ul::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 
 #navbar ul li {
+  display: inline-block;
   transition: all 0.5s ease;
   padding: 0 10px;
-  height: 190px;
 }
 
 #navbar ul li a {
   transition: all 0.5s ease;
-  line-height: 190px;
-  white-space: nowrap;
-  font-size: 25px;
+  font-size: 30px;
   color: white;
   text-decoration: none;
 }
@@ -68,18 +72,15 @@ footer > div p {
 }
 
 #navbar ul li img {
+  margin: 0;
+  vertical-align: middle;
   transition: all 0.5s ease;
-  height: 150px;
-  width: 150px;
+  height: 140px;
+  width: 140px;
   padding: 20px;
 }
 
-#navbar[class*="small"] ul li {
-  height: 100px;
-}
-
 #navbar[class*="small"] ul li a {
-  line-height: 100px;
   font-size: 20px;
 }
 
@@ -203,31 +204,26 @@ footer > div p {
   #navbar ul {
     transition: all 0s;
     list-style: none;
-    display: flex;
-    flex-direction: column;
     height: 100%;
     padding: 0;
     margin: 0;
   }
 
   #navbar ul li {
-    height: 100px;
+    height: calc(100vh / 4);
+    line-height: calc(100vh / 4);
+    padding: 0;
     transition: all 0s;
-    flex-grow: 1;
     text-align: center;
-    line-height: calc(100vh/4);
-    white-space: nowrap;
     width: 100vw;
   }
 
   #navbar ul li a {
     transition: all 0s;
     font-size: 60px;
-    line-height: 100px;
   }
 
   #navbar ul li:nth-child(3) {
-    transition: all 0s;
     display: none;
   }
 
