@@ -15,13 +15,17 @@ footer {
   background-color: #111111;
 }
 
-footer div {
+footer > div {
   max-width: 1000px;
   display: flex;
   justify-content: space-between;
   color: white;
   margin: 0 auto;
   padding: 40px 50px;
+}
+
+footer > div p {
+  margin: 0 auto;
 }
 
 #navbar {
