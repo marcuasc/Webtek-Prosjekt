@@ -11,6 +11,10 @@ path {
   fill: #FFFFFF;
 }
 
+p{
+  line-height: 2.0;
+}
+
 footer {
   background-color: #111111;
 }
