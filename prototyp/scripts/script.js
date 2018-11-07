@@ -2,7 +2,7 @@ let navbarContent = document.querySelector('link[id="navbarImport"]').import;
 let navbarHTML = navbarContent.getElementById("menuAndNavbar");
 let footerContent = document.querySelector('link[id="footerImport"]').import;
 let footerHTML = footerContent.getElementById("footer");
-if (window.location.pathname == "/index.html") {
+if (document.title == "Forside") {
   window.addEventListener('scroll', resizeNavbar);
   document.body.insertBefore(navbarHTML.cloneNode(true), document.body.firstChild);
   document.body.appendChild(footerHTML.cloneNode(true));

@@ -1,4 +1,5 @@
 #navbar {
+  z-index: 1;
   position: fixed;
   width: 100%;
   background-color: #111111;
@@ -134,6 +135,7 @@ footer > div p {
 }
 @media only screen and (max-width: 1024px) {
   #navbar {
+    z-index: 1;
     transition: all 0.5s ease;
     position: fixed;
     height: 100%;
@@ -163,7 +165,7 @@ footer > div p {
 
   #navbar ul li a {
     transition: all 0s;
-    font-size: 60px;
+    font-size: 50px;
   }
 
   #navbar ul li:nth-child(3) {
@@ -171,7 +173,11 @@ footer > div p {
   }
 
   #navbar[class*="small"] ul li a {
-    font-size: 60px;
+    font-size: 50px;
+  }
+
+  #menu {
+    z-index: 2;
   }
 
   #menu[class*="toggled"] {
