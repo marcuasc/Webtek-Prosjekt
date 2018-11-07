@@ -118,12 +118,22 @@ footer {
 }
 
 footer > div {
-  display: flex;
-  justify-content: space-between;
+  text-align: justify;
   color: white;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 0 20px;
+}
+
+footer > div::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+footer > div > * {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 footer > div p {

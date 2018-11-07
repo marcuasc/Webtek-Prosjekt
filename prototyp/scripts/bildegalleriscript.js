@@ -1,4 +1,4 @@
-const img_f = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg"];
+const img_f = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg"];
 let slideshowElement = document.getElementById("slideshow");
 var modalElement = document.getElementById("myModal");
 var divModalElement = document.getElementById("divModal");

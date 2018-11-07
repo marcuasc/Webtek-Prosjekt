@@ -20,8 +20,11 @@ label:hover img {
 }
 
 .menu {
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
+}
+
+.menu label {
+  display: inline-block;
 }
 
 #nextButton,
