@@ -1,10 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@font-face {
+    font-family: 'the_historia_demoregular';
+    src: url('../fonts/thehistoria-webfont.woff2') format('woff2'),
+         url('../fonts/thehistoria-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body,
 html {
   height: 100%;
   margin: 0;
   font-family: 'Roboto Slab', serif;
+}
+.title{
+  font-family:the_historia_demoregular;
+  padding: 20px;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  font-size: 70px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 path {
