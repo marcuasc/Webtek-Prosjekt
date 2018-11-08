@@ -49,7 +49,7 @@ for (var i = 0; i < pics.length; i++) {
 }
 let indexVisible = 0;
 let indexNext = 0;
-//Funksjonen kjører når en av pilene blir klikt. Hvis neste-pilen blir trukket vises neste bilde og korrosponderende dot endrer farge til gray. Motsatte skjer når man trykker på tilbake-knappen
+//Funksjonen kjører når en av pilene blir klikt. Hvis neste-pilen blir trukket vises neste bilde og korrosponderende dot endrer farge til gray. Motsatte skjer når man trykker på tilbake-knappen. indexVisible og indexNext korrosponderer til bildene i arrayen som vises og skal vises neste gang
 function kjorPil() {
   if (this.className === "next") {
     if (indexVisible === pics.length - 1) {
@@ -78,7 +78,7 @@ function kjorPil() {
     indexVisible = indexNext;
   }
 }
-//Funksjonen 
+//Funksjonen kjører når en av dottene blir klikt på. Funksjonen henter ut dataset som korrosponderer med bildet sitt og bytter til det. Endrer fargen på dottene. Endrer verdiene til indexNext og indexVisible til riktig verdi.
 function kjorDot() {
   for (var i = 0; i < pics.length; i++) {
     if (i == this.dataset.alt) {
@@ -93,7 +93,7 @@ function kjorDot() {
   indexNext = Number(this.dataset.alt);
   indexVisible = Number(this.dataset.alt);
 }
-
+//Funksjonen legger til bildet som blir klikt på inn i modalen kun hvis siden er større enn 1024px. Dette er fordi at modalen ikke vil være særlig større enn bildet når vinduet er mindre enn 1024px. 
 function zoomBilde() {
   if (window.innerWidth > 1024) {
     let temp = this.firstChild.cloneNode(false);
