@@ -3,15 +3,17 @@ let slideshowElement = document.getElementById("slideshow");
 var modalElement = document.getElementById("myModal");
 var divModalElement = document.getElementById("divModal");
 var closeElement = document.getElementById("close");
+//Lukker modalen ved klikk på closeElement
 closeElement.onclick = function() {
   modalElement.style.display = "none";
 }
+//Lukker modalen ved klikk utenfor modalen
 window.onclick = function(event) {
   if (event.target == modalElement) {
     modalElement.style.display = "none";
   }
 }
-
+//Funksjon som lager html kode for bildene fra arrayen img_f og tilsvarende dotter. Første bildet skal vises, de andre skal være skjult (foreløpig). Dottene har data som indikerer hvilket bilde de hører til. Funksjonen legger htmlen inn i document
 function addImages() {
   let prevHTML = slideshowElement.innerHTML;
   let imgHTML = "";
@@ -31,7 +33,8 @@ function addImages() {
   newHTML = imgHTML + prevHTML + dotHTML;
   slideshowElement.innerHTML = newHTML;
 }
-addImages();
+addImages(); //Kjører Funksjonen addImages
+//lager lister av bildene, pilene og dottene og legger til EventListeners
 let pics = document.querySelectorAll(".pic");
 let al = document.querySelectorAll("a");
 let dots = document.querySelectorAll(".dots");
@@ -46,7 +49,7 @@ for (var i = 0; i < pics.length; i++) {
 }
 let indexVisible = 0;
 let indexNext = 0;
-
+//Funksjonen kjører når en av pilene blir klikt. Hvis neste-pilen blir trukket vises neste bilde og korrosponderende dot endrer farge til gray. Motsatte skjer når man trykker på tilbake-knappen
 function kjorPil() {
   if (this.className === "next") {
     if (indexVisible === pics.length - 1) {
@@ -75,7 +78,7 @@ function kjorPil() {
     indexVisible = indexNext;
   }
 }
-
+//Funksjonen 
 function kjorDot() {
   for (var i = 0; i < pics.length; i++) {
     if (i == this.dataset.alt) {
