@@ -101,6 +101,16 @@ input[type*="button"] {
 input[type*="button"]:active {
   border-bottom: 2px #111111 solid;
 }
+
+input[type*="text"],
+input[type*="email"],
+input[type*="number"] {
+  width: 200px;
+  height: 20px;
+  padding: 10px;
+  border: 1px #999999 solid;
+  border-radius: 10px;
+}
 @media only screen and (max-width: 1024px) {
   body {
     background-image: none;

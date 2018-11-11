@@ -3,6 +3,7 @@ textarea {
   height: 200px;
   resize: none;
   font-family: arial;
+  border-radius: 10px;
 }
 
 .modal-content {
