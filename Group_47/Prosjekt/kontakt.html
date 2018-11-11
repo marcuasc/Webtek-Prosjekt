@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <title>Kontakt oss</title>
+    <meta charset="utf-8">
+    <link rel="Stylesheet" type="text/css" href="css/navbarfooterstyle.css">
+    <link rel="Stylesheet" type="text/css" href="css/style.css">
+    <link rel="Stylesheet" type="text/css" href="css/kontaktstyle.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link id="navbarImport" rel="import" href="navbar.html">
+    <link id="footerImport" rel="import" href="footer.html">
+  </head>
+  <body>
+    <div id="holder">
+      <div id="body">
+        <div id="main">
+          <h2>Kontakt oss</h2>
+          <form id="form">
+            <p>Navn:</p>
+            <input id="navn" type="text" name="navn"><br><br>
+            <p>
+              E-post:
+            </p>
+            <input id="email" type="email" name="email"><br><br>
+            <p>
+              Melding:
+            </p>
+            <textarea id="tekst" name="tekst" rows="4" cols="50"></textarea>
+            <br>
+            <input type="button" id="submit" value="Send melding">
+          </form>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div id="close"></div>
+          <div id="divModal"></div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/kontaktscript.js"></script>
+  </body>
+</html>

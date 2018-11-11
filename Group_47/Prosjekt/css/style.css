@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+* {
+  margin: 0;
+}
+
+body {
+  top: 0;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: 'Roboto Slab', serif;
+}
+
+#holder {
+  min-height: 100%;
+  position: relative;
+}
+
+path {
+  fill: white;
+}
+
+#body {
+  margin: 0 auto;
+  padding: 200px 0 334px;
+  left: 0;
+  right: 0;
+}
+
+#main {
+  margin: 0 auto;
+  padding: 60px;
+  max-width: 880px;
+  background-color: white;
+  font-size: 25px;
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  overflow: hidden;
+  background-color: #fefefe;
+  margin: 130px auto;
+  border: 1px solid #888;
+}
+
+#close {
+  margin: 0 0 10px;
+  width: 30px;
+  height: 30px;
+  float: right;
+  background-image: url("../img/close.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#close:hover {
+  cursor: pointer;
+}
+
+#divModal {
+  margin: 40px 0 0;
+  font-size: 30px;
+}
+
+#divModal img {
+  width: 100%;
+}
+
+input[type*="button"] {
+  height: 70px;
+  transition: all 0.05s ease;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: #555555;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px #111111 solid;
+  font-size: 20px;
+}
+
+input[type*="button"]:active {
+  border-bottom: 2px #111111 solid;
+}
+
+input[type*="text"],
+input[type*="email"],
+input[type*="number"] {
+  width: 200px;
+  height: 20px;
+  padding: 10px;
+  border: 1px #999999 solid;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    background-image: none;
+  }
+
+  #main {
+    padding: 160px 60px 414px;
+    z-index: -1;
+    height: calc(100% - 100px - 160px);
+  }
+
+  #body {
+    padding: 0;
+  }
+}

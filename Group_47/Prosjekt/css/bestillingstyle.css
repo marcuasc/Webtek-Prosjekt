@@ -1,0 +1,53 @@
+label > input {
+  display: none;
+}
+
+label > input + img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border: 5px solid transparent;
+}
+
+label > input:checked + img {
+  /*filter: drop-shadow(0px 0px 25px #000000);*/
+  filter: drop-shadow(2px 2px 0 #ff9000) 
+		      drop-shadow(-2px 2px 0 #ff9000)
+		      drop-shadow(2px -2px 0 #ff9000)
+           drop-shadow(-2px -2px 0 #ff9000)
+           drop-shadow(0px 0px 20px #915c00);;
+}
+
+label:hover img {
+  filter: drop-shadow(0px 0px 10px #111111);
+  /*
+  border: 5px solid grey;
+  border-style: inset;
+  */
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu label {
+  display: inline-block;
+}
+
+#nextButton,
+#submitButton {
+  float: right;
+}
+
+#previousButton {
+  float: left;
+}
+
+#side2 {
+  display: none;
+}
+
+.modal-content {
+  width: 60%;
+  padding: 40px;
+}
