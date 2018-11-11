@@ -116,7 +116,6 @@ footer {
   position: absolute;
   bottom: 0;
   right: 0;
-
 }
 
 footer > div {
@@ -136,28 +135,24 @@ footer > div::after {
 footer > div > * {
   display: inline-block;
   vertical-align: middle;
+  max-width: 300px;
 }
 
-footer > div p {
-  margin: 0 auto;
+footer div a:link {
+  color: lightblue;
 }
 
-footer > div a {
-  color: lightblue;
-}
-footer > div a:link{
-  color: lightblue;
-}
-footer > div a:visited{
+footer div a:visited {
   color: orange;
 }
-footer > div a:hover{
-  color: cyan ;
-}
-footer > div a:active{
-  color: blue;
+
+footer div a:hover {
+  color: cyan;
 }
 
+footer div a:active {
+  color: blue;
+}
 
 #menuButton[class*="toggled"] #buttonBot {
   transform: translateY(-25px) rotate(-135deg);
