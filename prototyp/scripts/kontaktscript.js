@@ -28,8 +28,14 @@ window.onclick = function(event) {
 }
 //Funksjon som sjekker om alle feltene i formen er utfylt, deretter legger den til brukerens input i modalen og sletter det som ble skrevet inn i formen av brukeren.
 function displayModal() {
-  if (navnElement.value == "" || emailElement.vakue == "" || tekstElement.value == "") {
-    alert("Alle feltene må fylles ut.")
+  if (navnElement.value == "") {
+    alert("Du må oppgi et gyldig navn.")
+  }
+  else if (validerEmail(emailElement.value)) {
+    alert("Du må oppgi en gyldig email.")
+  }
+  else if (tekstElement.value == "") {
+    alert("Du må skrive en melding for å kunne sende en melding.")
   }
   else {
     let melding = "Takk for din henvendelse, " + navnElement.value + ". Du vil få svar fortløpende på: " + document.forms["form"]["email"].value;
@@ -39,4 +45,24 @@ function displayModal() {
     emailElement.value = "";
     tekstElement.value = "";
   }
+}
+//Veldig primitiv email validator som sjekker om emailen er lang nok, har kun én alfakrøll og minst ett punktum.
+function validerEmail(email) {
+  if (email.length < 5) {
+    return true
+  }
+  let alfaCounter = 0
+  let punktumCounter = 0
+  for (var i = 0; i < email.length; i++) {
+    if (email[i] == "@") {
+      alfaCounter++;
+    }
+    if (email[i] == ".") {
+      punktumCounter++;
+    }
+  }
+  if (alfaCounter != 1 || punktumCounter == 0) {
+    return true
+  }
+  return false
 }
