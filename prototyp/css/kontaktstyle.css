@@ -2,7 +2,7 @@ textarea {
   width: 880px;
   height: 200px;
   resize: none;
-  font-family: 'Roboto Slab', serif;
+  font-family: arial;
 }
 
 .modal-content {

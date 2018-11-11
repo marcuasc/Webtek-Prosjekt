@@ -28,7 +28,7 @@ window.onclick = function(event) {
 }
 //erstattTegn erstatter tegn som blir skrevet inn i navnElement som ikke hører til det norske alfabetet
 function erstattTegn() {
-  navnElement.value = navnElement.value.replace(/[^a-zA-ZæøåÆØÅ@]+/, '');
+  navnElement.value = navnElement.value.replace(/[^a-zA-ZæøåÆØÅ]+/, '');
 }
 //submitOrder() alerter brukeren hvis tlf ikke er gyldig eller brukeren ikke oppgir navn
 function submitOrder() {
