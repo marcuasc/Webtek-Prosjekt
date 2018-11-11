@@ -84,12 +84,22 @@ path {
 }
 
 input[type*="button"] {
-  padding: 10px;
+  height: 70px;
+  transition: all 0.05s ease;
+  margin-top: 10px;
+  padding: 15px;
   border-radius: 7px;
-  background-color: #111111;
+  background-color: #555555;
   color: white;
-  border: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px #111111 solid;
   font-size: 20px;
+}
+
+input[type*="button"]:active {
+  border-bottom: 2px #111111 solid;
 }
 @media only screen and (max-width: 1024px) {
   body {
